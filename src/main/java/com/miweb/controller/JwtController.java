@@ -13,7 +13,7 @@ import com.miweb.seguridad.servicios.ServiciosJWT;
 
 
 @RestController
-//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200")
 
 public class JwtController {
 	public final String URL_AUTENTICARSE = "/autenticarse";

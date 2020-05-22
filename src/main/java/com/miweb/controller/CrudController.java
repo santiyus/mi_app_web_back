@@ -24,7 +24,7 @@ import com.miweb.modelos.Cliente;
 @PreAuthorize("authenticated") // para acceder Necesitan autenticarse
 @RestController()
 @RequestMapping("/crud")
-//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CrudController {
 
 	private final String URL_ALL_CLIENTES = "/all_clientes";
