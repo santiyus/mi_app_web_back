@@ -32,6 +32,7 @@ public interface ClienteRepositorio extends JpaRepository<EntiCliente, Serializa
 	 * @return  EntiCliente
 	 */
 	public abstract List<EntiCliente> findByApellidos(String apellidos);
+	
 
 	/**
 	 * Consulta si un cliente ya existe. Si es diferente de 0 es que si existe

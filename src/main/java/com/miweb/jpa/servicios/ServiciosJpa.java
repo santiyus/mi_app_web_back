@@ -130,14 +130,7 @@ public class ServiciosJpa {
 	 */
 	public boolean borrarCliente(long pId) throws Exception {
 		logger.info("Borrando cliente " + pId);
-		Cliente c = consultarClientePorId(pId);
-		if (c != null) {
-			repoCliente
-					.save(new EntiCliente(c.getId(), c.getNombre(), c.getApellidos(), c.getEmail(), c.getN_telefono()));
-			logger.info("Borrado cliente " + pId);
-		} else
-			throw new Exception("El cliente no existe");
-
+		repoCliente.deleteById(pId);
 		return true;
 	}
 
